@@ -1,0 +1,37 @@
+body {
+  background: lightpink;
+}
+
+.bubble {
+  height: 20px;
+  width: 60px;
+  /* min-width: 60px; */
+  background: lightpink;
+  display: block;
+  margin: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.pointer {
+  height: 10px;
+  width: 10px;
+  background: lightpink;
+  margin: 0 auto;
+  transform: rotate(225deg);
+  border-radius: 0 0 12px 0;
+  margin-top: -5px;
+  position: relative;
+  left: calc(0.5vw - 50px);
+}
+
+/* .blurred {
+  background: gray;
+  filter: blur(20px);
+  position: relative;
+  top: 0px;
+  z-index: -1;
+} */

@@ -1,0 +1,30 @@
+<div class="networth-panel-container">
+<mat-accordion [multi] = "true">
+    <mat-panel-title>
+        <h3>Net Worth</h3>
+      </mat-panel-title>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Cash
+        </mat-panel-title>
+        <mat-panel-description>
+          
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-cash-panel (sendCashTotal)='handleTotalCashValue($event)' ></app-cash-panel>
+    </mat-expansion-panel>
+    
+      <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Investment
+        </mat-panel-title>
+        <mat-panel-description>
+          $123124124
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-invetment-panel></app-invetment-panel>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

@@ -1,0 +1,12 @@
+<div class="cash-flow-income-chart-div">
+<h3>Cash Flow Income Chart</h3>
+<ngx-charts-advanced-pie-chart
+  [results]="single"
+  [gradient]="gradient"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
+  class="cash-flow-incoome-chart"
+  >
+</ngx-charts-advanced-pie-chart>
+</div>
