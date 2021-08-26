@@ -2,3 +2,10 @@
   display: flex;
   flex-direction: column;
 } */
+
+.market-movers-panel-title {
+  /* width: 100%; */
+  background-color: #1B2351;
+  color: white;
+  margin-top: 10px;
+}

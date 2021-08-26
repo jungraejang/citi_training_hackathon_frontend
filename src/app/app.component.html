@@ -1,6 +1,6 @@
-<body>
+<body [ngStyle]="{'background-color': (nightMode) ? '#232C47' : '#DCDEE5'}">
   <div class="header">
-    <h1>Portfolio Manager</h1>
+    <app-navbar (nightModeToggle)="toggleNightMode($event)" ></app-navbar>
   </div>
   <div class="main-body-div">
     <div>

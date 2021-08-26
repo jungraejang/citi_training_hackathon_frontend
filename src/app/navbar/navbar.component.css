@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  background-color: white;
+  height: 10vh;
+  background-image: url("../../assets/img/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpeg");
+  background-size: cover;
+  background-position: 0 -800px;
+
+  width: 100vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.navbar-night {
+  background-color: white;
+  height: 10vh;
+  background-image: url("../../assets/img/the-lake-at-night-1561743.jpeg");
+  background-size: cover;
+
+  background-position: 0 -120px;
+
+  width: 100vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}

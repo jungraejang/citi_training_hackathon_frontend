@@ -10,6 +10,6 @@ export class InvestmentService {
 
   }
   getInvestmentData(id: number) {
-    return this.http.get(`https://nickgroupbhackathon-nickgroupbhackathon.namdevops18.conygre.com/transactions/${id}/stock_totals`)
+    return this.http.get(`http://nickgroupbhackathon-nickgroupbhackathon.namdevops18.conygre.com/transactions/${id}/stock_totals`)
   }
 }

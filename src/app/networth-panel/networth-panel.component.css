@@ -4,4 +4,29 @@
 
 .networth-panel-container {
   overflow: scroll;
+  margin-left: 10px;
+}
+
+.networth-panel-title {
+  width: 100%;
+  background-color: #1B2351;
+  color: white;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 10px 0;
+}
+
+.mat-accordion .mat-expansion-panel:not(.mat-expanded),
+.mat-accordion .mat-expansion-panel:not(.mat-expansion-panel-spacing) {
+  border-radius: 0;
+  margin: 10px 0;
 }

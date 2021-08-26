@@ -23,10 +23,11 @@ export class CashPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    console.log("cashdata for cash  component", this.cashData)
   }
 
   ngOnChanges(): void {
+    console.log("onchange triggered")
     this.sendTotalCashAmount()
   }
 

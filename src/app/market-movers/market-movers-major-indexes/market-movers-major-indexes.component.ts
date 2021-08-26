@@ -8,6 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MarketMoversMajorIndexesComponent implements OnInit {
 
   @Input() code: string = ""
+  @Input() marketMoversTicker: any = ""
+  @Input() marketMoversChange: any = ""
+
 
   constructor() { }
 

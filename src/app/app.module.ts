@@ -16,6 +16,14 @@ import { MarketMoversComponent } from './market-movers/market-movers.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { MarketMoversMajorIndexesComponent } from './market-movers/market-movers-major-indexes/market-movers-major-indexes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     NetworthBarChartComponent,
     CashFlowIncomeChartComponent,
     MarketMoversComponent,
-    MarketMoversMajorIndexesComponent
+    MarketMoversMajorIndexesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +46,13 @@ import { HttpClientModule } from '@angular/common/http';
     CdkAccordionModule,
     NgxChartsModule,
     MatChipsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
+    MatBadgeModule,
+    MatSlideToggleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

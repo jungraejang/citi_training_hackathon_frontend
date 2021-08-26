@@ -1,6 +1,6 @@
 <cdk-accordion class="example-accordion" >
     <cdk-accordion-item
-      *ngFor="let item of items[1] | keyvalue; let index = index;"
+      *ngFor="let item of investmentData[1] | keyvalue; let index = index;"
       #accordionItem="cdkAccordionItem"
       class="example-accordion-item"
       role="button"
@@ -13,17 +13,20 @@
         {{ item.key }}
         <span class="example-accordion-item-description">
           <!-- Click to {{ accordionItem.expanded ? 'close' : 'open' }} -->
-          {{ item.value }}
+          $ {{item.value}}
+          <!-- {{ item.value | currency}} -->
+
         </span>
       </div>
-      <div
+      <!-- uncomment to enable description -->
+      <!-- <div
         class="example-accordion-item-body"
         role="region"
         [style.display]="accordionItem.expanded ? '' : 'none'"
         [attr.id]="'accordion-body-' + index"
         [attr.aria-labelledby]="'accordion-header-' + index">
         I haz {{item.value}} shares  of {{item.value}}
-      </div>
+      </div> -->
     </cdk-accordion-item>
   </cdk-accordion>
   

@@ -1,6 +1,6 @@
 <cdk-accordion class="example-accordion" >
     <cdk-accordion-item
-      *ngFor="let item of items[1] | keyvalue; let index = index;"
+      *ngFor="let item of cashData[1] | keyvalue; let index = index;"
       #accordionItem="cdkAccordionItem"
       class="example-accordion-item"
       role="button"
@@ -13,7 +13,9 @@
         {{ item.key }}
         <span class="example-accordion-item-description">
           <!-- Click to {{ accordionItem.expanded ? 'close' : 'open' }} -->
-          {{ item.value}}
+          <!-- {{ item.value | currency}} -->
+          $ {{ item.value}}
+
         </span>
       </div>
       <!-- <div

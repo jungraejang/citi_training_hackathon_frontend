@@ -109,6 +109,9 @@ section {
 
 body {
   line-height: 1;
+  /* background-color: #003B70; */
+  background-color: #DCDEE5;
+  min-height: 100%;
 }
 
 ol,
@@ -152,17 +155,18 @@ body {
 
 .market-movers-container {
   margin-left: 20px;
+  width: 15vw;
 }
 
 .app-networth-panel {
-  /* width: 20vw; */
+  width: 25vw;
   /* height: 100vh; */
   /* flex-direction: column; */
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .app-networth-bar-chart {
   /* width: 40vw;
   height: 20vh; */
-  background-color: red;
+  /* background-color: red; */
 }

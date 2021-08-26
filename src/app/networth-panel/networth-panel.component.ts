@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CashServicesService } from '../services/cash-services.service';
+import { InvestmentService } from '../services/investment.service';
 @Component({
   selector: 'app-networth-panel',
   templateUrl: './networth-panel.component.html',
@@ -7,11 +8,14 @@ import { CashServicesService } from '../services/cash-services.service';
 })
 export class NetworthPanelComponent implements OnInit {
   panelOpenState = true;
-  constructor(private cashApiService: CashServicesService) { }
+  constructor(private cashApiService: CashServicesService, private investmentApiService: InvestmentService) { }
   id: number = 1
-  cashData: any = {}
+  cashData: any = []
   cashTotal: number = 0
+  investmentData: any = []
   ngOnInit(): void {
+    this.makeCashApiServiceCall()
+    this.makeInvestmentApiServiceCall()
   }
 
   handleTotalCashValue(value: number) {
@@ -20,7 +24,16 @@ export class NetworthPanelComponent implements OnInit {
 
   makeCashApiServiceCall() {
     this.cashApiService.getCashData(this.id).subscribe((data) => {
+      console.log("data for cash", data)
       this.cashData = data
+    })
+  }
+
+  makeInvestmentApiServiceCall() {
+    this.investmentApiService.getInvestmentData(this.id).subscribe((data) => {
+      console.log("data for cash", data)
+      this.investmentData = data
+
     })
   }
 

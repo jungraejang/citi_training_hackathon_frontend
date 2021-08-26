@@ -4,9 +4,23 @@ body {
 
 .bubble {
   height: 20px;
-  width: 60px;
+  width: 15vw;
   /* min-width: 60px; */
   background: lightpink;
+  display: block;
+  margin: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.bubble-green {
+  height: 20px;
+  width: 100px;
+  /* min-width: 60px; */
+  background: lightgreen;
   display: block;
   margin: 0;
   border-radius: 5px;
