@@ -147,6 +147,7 @@ body {
 .main-body-div {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .chart-container {
@@ -156,6 +157,7 @@ body {
 .market-movers-container {
   margin-left: 20px;
   width: 15vw;
+  margin-right: 10px;
 }
 
 .app-networth-panel {

@@ -5,6 +5,7 @@
 .networth-panel-container {
   overflow: scroll;
   margin-left: 10px;
+  width: 20vw;
 }
 
 .networth-panel-title {
