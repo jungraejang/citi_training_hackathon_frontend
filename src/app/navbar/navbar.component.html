@@ -1,11 +1,11 @@
 <mat-toolbar [ngClass]="isChecked ? 'navbar-night' : 'navbar'">
-    <span style="color: white; font-size: 26px;">My Portfolio  Manager</span>
+    <span style="color: white; font-size: 26px;">Portfolio  Management Portal</span>
     <span class="example-spacer"></span>
-    <mat-slide-toggle [(ngModel)]="isChecked" style="color: white; margin-right: 10px; font-size: 12px;" (change)="toggleNightMode(isChecked)" >{{isChecked ? "🌙 Night Mode" : "🌞Day Mode"}}</mat-slide-toggle>
-    <button mat-icon-button class=" favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-slide-toggle [(ngModel)]="isChecked" style="color: white; margin-right: 10px; font-size: 12px;" (change)="toggleNightMode(isChecked)" >{{isChecked ? "🌙  Night Mode" : "🌞   Day Mode"}}</mat-slide-toggle>
+    <button mat-icon-button class=" favorite-icon" style="border-radius: 50%; background-color: white;" aria-label="Example icon-button with heart icon">
         <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <button mat-icon-button class="example-icon" style="margin-left: 10px; border-radius: 50%; background-color: white;" aria-label="Example icon-button with share icon">
         <mat-icon>person</mat-icon>
     </button>
   </mat-toolbar>

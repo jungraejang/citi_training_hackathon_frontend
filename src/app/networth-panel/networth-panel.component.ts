@@ -24,8 +24,7 @@ export class NetworthPanelComponent implements OnInit {
 
   makeCashApiServiceCall() {
     this.cashApiService.getCashData(this.id).subscribe((data) => {
-      console.log("data for cash", data)
-      this.cashData[0] = Math.round(data[0])
+      this.cashData[0] = data[0].toFixed(2)
       // this.cashData[0] = data[0]
       // this.cashData[1] = data[1]
       // this.cashData = data

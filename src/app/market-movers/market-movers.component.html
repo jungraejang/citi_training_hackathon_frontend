@@ -2,5 +2,4 @@
     <mat-card class="market-movers-panel-title">Market Movers</mat-card>
     <app-market-movers-major-indexes *ngFor="let item of marketMoversData[0] | keyvalue" [marketMoversTicker]="item.key" [marketMoversChange]="item.value"></app-market-movers-major-indexes>
     <app-market-movers-major-indexes *ngFor="let item of marketMoversData[1] | keyvalue" [marketMoversTicker]="item.key" [marketMoversChange]="item.value"></app-market-movers-major-indexes>
-
 </div>

@@ -6,12 +6,21 @@
     <div>
     <app-networth-panel class="app-networth-panel"></app-networth-panel>
   </div>
+  <div class="chart-table-container">
     <div class="chart-container">
       <!-- <app-networth-bar-chart></app-networth-bar-chart>
       <app-cash-flow-income-chart></app-cash-flow-income-chart> -->
+      <!-- <mat-progress-spinner mode="indeterminate"></mat-progress-spinner> -->
+      <app-year-over-year-bar-chart [nightMode]="nightMode"></app-year-over-year-bar-chart>
+      <app-weekly-line-graph></app-weekly-line-graph>
     </div>
+    <div class="table-container">
+      <app-networth-table></app-networth-table>
+    </div>
+  </div>
     <div class="market-movers-container">
       <app-market-movers></app-market-movers>
+      <img [ngClass]="nightMode ? 'fake_ad_active' : 'fake_ad_inactive'" src="./assets/img/nick_fake_ad.png">
     </div>
   </div>
 </body>

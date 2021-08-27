@@ -23,7 +23,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
-
+import { YearOverYearBarChartComponent } from './year-over-year-bar-chart/year-over-year-bar-chart.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { WeeklyLineGraphComponent } from './weekly-line-graph/weekly-line-graph.component';
+import { NetworthTableComponent } from './networth-table/networth-table.component';
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { FormsModule } from '@angular/forms';
     CashFlowIncomeChartComponent,
     MarketMoversComponent,
     MarketMoversMajorIndexesComponent,
-    NavbarComponent
+    NavbarComponent,
+    YearOverYearBarChartComponent,
+    WeeklyLineGraphComponent,
+    NetworthTableComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +59,9 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatBadgeModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatProgressSpinnerModule,
+    CdkTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

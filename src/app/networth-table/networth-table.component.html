@@ -1,0 +1,30 @@
+<p>*OT: Over Time</p>
+<table cdk-table [dataSource]="tableTotalArray">
+    <!-- Position Column -->
+    <ng-container cdkColumnDef="time">
+      <th cdk-header-cell *cdkHeaderCellDef>Time Period</th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.time}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="cTOT">
+      <th cdk-header-cell *cdkHeaderCellDef> Cash Change OT </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.cTOT | currency}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container cdkColumnDef="tOT">
+      <th cdk-header-cell *cdkHeaderCellDef> Investment Change OT </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.tOT| currency}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container cdkColumnDef="nCOT">
+      <th cdk-header-cell *cdkHeaderCellDef> Net Worth Change OT </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.nCOT| currency}} </td>
+    </ng-container>
+  
+    <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  

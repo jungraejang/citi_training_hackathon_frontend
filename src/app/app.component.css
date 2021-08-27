@@ -110,7 +110,8 @@ section {
 body {
   line-height: 1;
   /* background-color: #003B70; */
-  background-color: #DCDEE5;
+  /* background-color: #DCDEE5; */
+  background-color: #CED2E0;
   min-height: 100%;
 }
 
@@ -151,7 +152,37 @@ body {
 }
 
 .chart-container {
-  width: 50vw;
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  flex-direction: row;
+  height: 45vh;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: white;
+  /* border: 5px solid black; */
+}
+
+.chart-table-container {
+  /* display: flex; */
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+
+.fake_ad_active {
+  width: 15vw;
+
+}
+
+.fake_ad_inactive {
+  width: 15vw;
+  display: none;
+}
+
+.table-container {
+  margin-top: 30px;
 }
 
 .market-movers-container {
