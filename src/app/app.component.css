@@ -112,7 +112,7 @@ body {
   /* background-color: #003B70; */
   /* background-color: #DCDEE5; */
   background-color: #CED2E0;
-  min-height: 100%;
+  height: 1100px;
 }
 
 ol,
@@ -140,7 +140,7 @@ table {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
 }
@@ -159,7 +159,7 @@ body {
   flex-direction: row;
   height: 45vh;
   margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 15px;
   color: white;
   /* border: 5px solid black; */
 }
@@ -168,7 +168,6 @@ body {
   /* display: flex; */
   justify-content: space-around;
   flex-direction: column;
-
 }
 
 .fake_ad_active {

@@ -3,7 +3,7 @@
 }
 
 .networth-panel-container {
-  overflow: scroll;
+  /* overflow: scroll; */
   margin-left: 10px;
   width: 20vw;
 }
